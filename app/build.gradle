@@ -5,7 +5,7 @@ apply plugin: 'kotlin-kapt'
 android {
     compileSdkVersion 30
     defaultConfig {
-        applicationId "com.plangrid.plansensor"
+        applicationId "com.plangrid.skeleton"
         minSdkVersion 16
         targetSdkVersion 30
         versionCode 1
