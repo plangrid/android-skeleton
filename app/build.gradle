@@ -3,6 +3,7 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-kapt'
 
 android {
+    namespace = "com.plangrid.skeleton"
     compileSdkVersion 33
     defaultConfig {
         applicationId "com.plangrid.skeleton"
@@ -24,6 +25,10 @@ android {
         jvmTarget = JavaVersion.VERSION_17.toString()
     }
 
+    kotlin {
+        jvmToolchain(17)
+    }
+
     //noinspection GroovyMissingReturnStatement
     packagingOptions {
         exclude 'META-INF/LICENSE'
@@ -34,6 +39,8 @@ android {
         sourceCompatibility JavaVersion.VERSION_17
         targetCompatibility JavaVersion.VERSION_17
     }
+
+
 }
 
 dependencies {
